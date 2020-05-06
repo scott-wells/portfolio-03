@@ -18,10 +18,26 @@ function App() {
           </div>
           <div className='nav-links'>
             <ul>
-              <li>Work</li>
-              <li>Blog</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li>
+                <a href='#' target='_self'>
+                  Work
+                </a>
+              </li>
+              <li>
+                <a href='#' target='_self'>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href='#' target='_self'>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href='#' target='_self'>
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -40,15 +56,25 @@ function App() {
               UX/UI, and all things code.
             </p>
             <div>
-              <i className='fab fa-github-alt'></i>
-              <i className='fab fa-linkedin'></i>
-              <i className='fab fa-instagram'></i>
+              <a
+                class='p-3'
+                href='https://github.com/scott-wells'
+                target='_blank'
+              >
+                <i className='fab fa-github-alt'></i>
+              </a>
+              <a
+                class='p-3'
+                href='https://www.instagram.com/scott.m.wells'
+                target='_blank'
+              >
+                <i className='fab fa-instagram'></i>
+              </a>
             </div>
           </div>
-          <div className='card-wrap'>
-            <div className='card-img'>
-              <img src={pic} alt='profile pic'></img>
-            </div>
+
+          <div className='card-img'>
+            <img src={pic} alt='profile pic'></img>
           </div>
         </div>
       </section>
@@ -433,7 +459,7 @@ function App() {
             <ul>
               <li>I write code 💻</li>
               <li>let favoriteMeal = [🍔, 🍟, 🥤]</li>
-              <li>I also enjoy: ☕, 🍺, 🍜</li>
+              <li>I also enjoy: ☕, 🍺, 🍜, 🌯</li>
               <li>I'm a photographer: 📷</li>
               <li>Gardening is fun: 👨🏻‍🌾, 🍅, 🌻</li>
               <li>Also longboarding & camping: 🛹, 🗻</li>
@@ -485,10 +511,26 @@ function App() {
         <div className='footer'>
           <div className='nav-links'>
             <ul>
-              <li>Work</li>
-              <li>Blog</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li>
+                <a href='#' target='_self'>
+                  Work
+                </a>
+              </li>
+              <li>
+                <a href='#' target='_self'>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href='#' target='_self'>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href='#' target='_self'>
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
           <div className='logo'>

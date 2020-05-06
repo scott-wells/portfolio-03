@@ -1,13 +1,46 @@
-$greydark: #4f566b;
-$greylight: #8792a2;
-$greylighter: #e3e8ee;
-$greenaccent: #a1c487;
-$greenaccentdark: #859771;
+//
+//VARIABLES
+//
+$greydark: #5c5c5c;
+$grey: #868f92;
+$offwhite: #e3eeee;
+$blueaccent: rgb(4, 133, 138);
+$blueaccentdarker: rgb(10, 94, 97);
 
+//
+//MIXINS
+//
+@mixin buttonPill {
+  background: $offwhite;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+//
+// FONTS
+//
 @font-face {
   font-family: "Monserrat", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap");
 }
+
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: $blueaccent;
+}
+a:hover,
+a:active {
+  color: $blueaccentdarker;
+}
+
+//
+// *
+//
 
 * {
   box-sizing: border-box;
@@ -17,7 +50,7 @@ $greenaccentdark: #859771;
 
 .section-wrap {
   background: white;
-  width: 80vw;
+  width: 60vw;
   margin: 0 auto;
 }
 
@@ -35,7 +68,7 @@ $greenaccentdark: #859771;
     align-items: center;
     cursor: pointer;
     img {
-      max-width: 12%;
+      max-width: 11%;
     }
     h1 {
       margin-left: 1.3rem;
@@ -44,12 +77,25 @@ $greenaccentdark: #859771;
   .nav-links {
     ul {
       li {
-        font-size: 1.1rem;
+        font-size: 1rem;
         list-style: none;
         display: inline-block;
-        padding-left: 1rem;
-
+        margin-left: 0.5rem;
         cursor: pointer;
+        a {
+          text-decoration: none;
+        }
+        a:link,
+        a:visited {
+          @include buttonPill;
+          background: none;
+          color: $greydark;
+        }
+        a:hover,
+        a:active {
+          @include buttonPill;
+          color: $blueaccentdarker;
+        }
       }
     }
   }
@@ -60,11 +106,11 @@ $greenaccentdark: #859771;
 //
 .hero {
   font-family: "Montserrat", sans-serif;
-  padding: 8rem 0;
+  padding: 5rem 0;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 20px;
   .hero-text {
     align-self: center;
     h1 {
@@ -78,29 +124,26 @@ $greenaccentdark: #859771;
       margin-top: 1rem;
     }
     i {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-top: 1.5rem;
       padding-right: 1rem;
       cursor: pointer;
     }
   }
-  .card-wrap {
-    align-self: center;
-    margin: 0 auto;
-    .card-img {
-      background: white;
-      -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
-      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
-      height: 280px;
-      width: 280px;
-      border-radius: 50%;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      img {
-        transform: scale(0.21);
-      }
+  .card-img {
+    max-width: 75%;
+    margin: auto;
+    background: white;
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    overflow: hidden;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    img {
+      max-width: 100%;
+      transform: scale(1.4);
     }
   }
 }
@@ -299,6 +342,17 @@ $greenaccentdark: #859771;
         display: inline-block;
         padding-right: 0.8rem;
         cursor: pointer;
+        a {
+          text-decoration: none;
+        }
+        a:link,
+        a:visited {
+          color: $greydark;
+        }
+        a:hover,
+        a:active {
+          color: black;
+        }
       }
     }
   }
