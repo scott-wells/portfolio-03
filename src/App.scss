@@ -6,6 +6,9 @@ $grey: #868f92;
 $offwhite: #e3eeee;
 $blueaccent: rgb(4, 133, 138);
 $blueaccentdarker: rgb(10, 94, 97);
+$phone: 640px;
+$tablet: 768px;
+$desktop: 1024px;
 
 //
 //MIXINS
@@ -372,30 +375,17 @@ a:active {
   }
 }
 
-// //
-// // ELEMENT STYLES
-// //
-// .buttonPill {
-//   font-family: "Rubik", sans-serif;
-//   font-weight: 500;
-//   color: $greenaccentdark;
-//   background: none;
-//   border: 1.3px solid $greenaccent;
-//   padding: 0.5rem 1rem;
-//   text-align: center;
-//   text-decoration: none;
-//   border-radius: 20px;
-//   cursor: pointer;
-// }
+@media (max-width: $phone) {
+}
 
-// .formPill {
-//   font-family: "Rubik", sans-serif;
-//   color: $greylight;
-//   background: white;
-//   width: 100%;
-//   padding: 0.5rem 1rem;
-//   border-radius: 5px;
-//   border: none;
-//   -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
-//   box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
-// }
+@media (min-width: $phone) and (max-width: $tablet) {
+}
+
+@media (min-width: $tablet) and (max-width: 950px) {
+}
+
+@media (min-width: 950px) and (max-width: $desktop) {
+}
+
+@media (min-width: $desktop) {
+}
