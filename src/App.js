@@ -4,8 +4,6 @@ import RecentWork from "./RecentWork";
 
 import logo from "./img/pixel-scott.png";
 import pic from "./img/profile-pic.jpg";
-import squarespace from "./img/squarespace-logo.png";
-import react from "./img/react-logo.png";
 
 function App() {
   return (

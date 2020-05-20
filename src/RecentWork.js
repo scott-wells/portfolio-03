@@ -6,13 +6,10 @@ import react from "./img/react-logo.png";
 import HtmlIcon from "./img/HtmlIcon";
 import JavascriptIcon from "./img/JavascriptIcon";
 import GitIcon from "./img/GitIcon";
-import BootstrapIcon from "./img/BootstrapIcon";
 import PhpIcon from "./img/PhpIcon";
 import WordpressIcon from "./img/WordpressIcon";
 import MysqlIcon from "./img/MysqlIcon";
-import VueIcon from "./img/VueIcon";
 import CssIcon from "./img/CssIcon";
-import AngularIcon from "./img/AngularIcon";
 
 const RecentWork = (props) => {
   return (
@@ -22,10 +19,13 @@ const RecentWork = (props) => {
         <div className='work-01'>
           <hr />
           <h3>
-            <a href='http://lisaforsenatedistrict12.com/' target='blank'>
+            <a
+              href='http://lisaforsenatedistrict12.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               lisaforsenatedistrict12.com
             </a>
-            - 20.04.06
           </h3>
           <p>
             This was a site created in Wordpress using a few design plugins and
@@ -46,10 +46,13 @@ const RecentWork = (props) => {
         <div className='work-02'>
           <hr />
           <h3>
-            <a href='https://elizabethwellsphotography.com' target='blank'>
+            <a
+              href='https://elizabethwellsphotography.com'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               elizabethwellsphotography.com
-            </a>{" "}
-            - 20.02.05
+            </a>
           </h3>
           <p>
             This is my other business. I've designed and redesigned this site
@@ -69,26 +72,34 @@ const RecentWork = (props) => {
         <div className='work-03'>
           <hr />
           <h3>
-            <a href='#'>scott-wells.com</a> - 20.05.31
+            <a href='#'>scott-wells.com</a>
           </h3>
           <p>
             Of course I have to include this portfolio site. I designed this
-            portfolio in React, wtih custom styles and Sass. Heavily inspired by
-            these people:{" "}
-            <a href='https://adamthedev.com/' target='blank'>
+            portfolio in React, with custom styles and Sass. Heavily inspired by
+            these people:
+            <a
+              href='https://adamthedev.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Adam The Dev
             </a>
-            ,{" "}
-            <a href='https://www.taniarascia.com/' target='blank'>
+            ,
+            <a
+              href='https://www.taniarascia.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Tania Rascia
             </a>
-            ,{" "}
-            <a href='https://christophermurphy.dev/' target='blank'>
+            , and
+            <a
+              href='https://christophermurphy.dev/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Christopher Murphy
-            </a>
-            , and{" "}
-            <a href='https://www.aaronmoreno.co/' target='blank'>
-              Aaron Moreno
             </a>
             .
           </p>
@@ -110,7 +121,6 @@ const RecentWork = (props) => {
             <a href='https://sandyrauschnmsenate.com/' target='blank'>
               sandyrauschnmsenate.com
             </a>
-            - 20.05.19
           </h3>
           <p>
             This is another one of my Wordpress sites designed with Elementor

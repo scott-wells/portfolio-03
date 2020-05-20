@@ -3,9 +3,12 @@
 //
 $greydark: #333333;
 $grey: #868f92;
+$offwhite: #f1eee9;
+$orangeaccent: rgb(221, 86, 7);
+$orangeaccentdarker: rgb(172, 71, 13);
 $offwhite: #e3eeee;
-$blueaccent: rgb(4, 133, 138);
-$blueaccentdarker: rgb(10, 94, 97);
+$blueaccent: rgb(7, 160, 221);
+$blueaccentdarker: rgb(13, 114, 172);
 $phone: 640px;
 $tablet: 768px;
 $desktop: 1024px;
@@ -35,11 +38,12 @@ a {
 }
 a:link,
 a:visited {
-  color: $blueaccent;
+  background: none;
+  color: $greydark;
 }
 a:hover,
 a:active {
-  color: $blueaccentdarker;
+  color: $orangeaccentdarker;
 }
 
 //
@@ -87,7 +91,7 @@ a:active {
         a:hover,
         a:active {
           @include buttonPill;
-          color: $blueaccentdarker;
+          color: $greydark;
         }
       }
     }
@@ -111,6 +115,17 @@ a:active {
       font-size: 1.1rem;
       line-height: 1.7rem;
       margin-top: 1rem;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:link,
+    a:visited {
+      color: $greydark;
+    }
+    a:hover,
+    a:active {
+      color: $blueaccentdarker;
     }
     i {
       font-size: 1.5rem;
@@ -147,8 +162,17 @@ a:active {
     }
     h3 {
       font-size: 1.3rem;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 1rem;
+      a:link,
+      a:visited {
+        background: none;
+        color: $greydark;
+      }
+      a:hover,
+      a:active {
+        color: $blueaccentdarker;
+      }
     }
     p {
       font-size: 1rem;
@@ -166,7 +190,7 @@ a:active {
       .tech-icons {
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         span {
           width: 6%;
           margin-right: 0.5rem;
@@ -223,7 +247,7 @@ a:active {
       .tech-icons {
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         span {
           width: 6%;
           margin-right: 0.5rem;
@@ -278,6 +302,15 @@ a:active {
       i {
         font-size: 1.7rem;
       }
+    }
+    a:link,
+    a:visited {
+      background: none;
+      color: $greydark;
+    }
+    a:hover,
+    a:active {
+      color: $blueaccentdarker;
     }
   }
 }
@@ -363,6 +396,27 @@ a:active {
     padding: 6rem 0;
     .card-img {
       display: none;
+    }
+  }
+
+  //
+  // RECENT WORK
+  //
+  .recent-work {
+    .work-01,
+    .work-02,
+    .work-03,
+    .work-04 {
+      .tech-stack {
+        .tech-icons {
+          span {
+            width: 9%;
+          }
+          img {
+            width: 9%;
+          }
+        }
+      }
     }
   }
 
