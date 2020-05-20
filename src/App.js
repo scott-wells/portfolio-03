@@ -52,7 +52,7 @@ function App() {
               Hi there! <br /> I'm Scott ✌🏻
             </h1>
             <p>
-              I am a front-end engineer. I design websites for makers,
+              I am a front end developer. I design websites for makers,
               creatives, and small businesses. I love photography, typography,
               UX/UI, and all things code.
             </p>
@@ -83,7 +83,7 @@ function App() {
       {/* Recent Work */}
       <RecentWork />
 
-      {/* Latest Articles */}
+      {/* Latest Articles
       <section className='section-wrap'>
         <div className='latest-articles'>
           <h2>Writings</h2>
@@ -108,7 +108,7 @@ function App() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ABOUT SECTION */}
       <section className='section-wrap'>
