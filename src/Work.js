@@ -11,13 +11,13 @@ import WordpressIcon from "./img/WordpressIcon";
 import MysqlIcon from "./img/MysqlIcon";
 import CssIcon from "./img/CssIcon";
 
-const RecentWork = (props) => {
+const Work = (props) => {
   return (
     <section className='section-wrap'>
       <div className='recent-work'>
-        <h2>Recent Work</h2>
+        <h2 id='02'>Recent Work</h2>
+        <hr />
         <div className='work-01'>
-          <hr />
           <h3>
             <a
               href='http://lisaforsenatedistrict12.com/'
@@ -43,8 +43,8 @@ const RecentWork = (props) => {
             </div>
           </div>
         </div>
+        <hr />
         <div className='work-02'>
-          <hr />
           <h3>
             <a
               href='https://elizabethwellsphotography.com'
@@ -69,8 +69,8 @@ const RecentWork = (props) => {
             </div>
           </div>
         </div>
+        <hr />
         <div className='work-03'>
-          <hr />
           <h3>
             <a href='#'>scott-wells.com</a>
           </h3>
@@ -83,7 +83,7 @@ const RecentWork = (props) => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              Adam The Dev
+              &nbsp;Adam The Dev
             </a>
             ,
             <a
@@ -91,7 +91,7 @@ const RecentWork = (props) => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              Tania Rascia
+              &nbsp;Tania Rascia
             </a>
             , and
             <a
@@ -99,7 +99,7 @@ const RecentWork = (props) => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              Christopher Murphy
+              &nbsp;Christopher Murphy
             </a>
             .
           </p>
@@ -115,8 +115,8 @@ const RecentWork = (props) => {
             </div>
           </div>
         </div>
+        <hr />
         <div className='work-04'>
-          <hr />
           <h3>
             <a href='https://sandyrauschnmsenate.com/' target='blank'>
               sandyrauschnmsenate.com
@@ -142,4 +142,4 @@ const RecentWork = (props) => {
   );
 };
 
-export default RecentWork;
+export default Work;

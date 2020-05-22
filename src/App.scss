@@ -6,7 +6,7 @@ $grey: #868f92;
 $offwhite: #f1eee9;
 $orangeaccent: rgb(221, 86, 7);
 $orangeaccentdarker: rgb(172, 71, 13);
-$offwhite: #e3eeee;
+$offwhite: #f6f8f8;
 $blueaccent: rgb(7, 160, 221);
 $blueaccentdarker: rgb(13, 114, 172);
 $phone: 640px;
@@ -61,10 +61,21 @@ a:active {
 }
 
 //
+// Sticky Navbar
+//
+.sticky {
+  position: sticky;
+  top: 0;
+  // width: 100%;
+}
+
+//
 // HEADER
 //
 .header {
   font-family: "Montserrat", sans-serif;
+  // position: sticky;
+  // top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,23 +154,23 @@ a:active {
   font-family: "Montserrat", sans-serif;
   padding: 2rem 0;
   overflow: hidden;
+
   h2 {
     font-size: 2.3rem;
-
     margin-bottom: 3rem;
+  }
+  hr {
+    // margin-bottom: 2rem;
+    border: none;
+    height: 0.5px;
+    background: black;
+    opacity: 0.3;
   }
   .work-01,
   .work-02,
   .work-03,
   .work-04 {
-    margin-bottom: 3rem;
-    hr {
-      margin-bottom: 1rem;
-      border: none;
-      height: 0.5px;
-      background: black;
-      opacity: 0.3;
-    }
+    padding: 2rem 0;
     h3 {
       font-size: 1.3rem;
       font-weight: 400;
@@ -180,7 +191,6 @@ a:active {
       margin-bottom: 1rem;
     }
     .tech-stack {
-      margin-bottom: 2rem;
       p {
         font-size: 0.8rem;
         font-weight: 600;
