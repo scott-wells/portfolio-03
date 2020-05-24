@@ -10,6 +10,7 @@ import PhpIcon from "./img/PhpIcon";
 import WordpressIcon from "./img/WordpressIcon";
 import MysqlIcon from "./img/MysqlIcon";
 import CssIcon from "./img/CssIcon";
+import MapboxIcon from "./img/mapbox-logo.png";
 
 const Work = (props) => {
   return (
@@ -17,7 +18,45 @@ const Work = (props) => {
       <div className='recent-work'>
         <h2 id='02'>Recent Work</h2>
         <hr />
-        <div className='work-01'>
+        <div className='work'>
+          <h3>
+            <a
+              href='https://scott-wells.com/trail-finder'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Trail Finder
+            </a>
+          </h3>
+          <p>
+            This is a simple app built in React that pulls from the{" "}
+            <a
+              href='hikingproject.com'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              hikingproject.com
+            </a>{" "}
+            API to get trails within a certain radius from Albuquerque, NM. At
+            the moment, it populates a map built with Mapbox and displays
+            markers featuring trail images, rating and length. User favorites
+            and search still to come!
+          </p>
+          <div className='tech-stack'>
+            <p>Tech Stack:</p>
+            <div className='tech-icons'>
+              <HtmlIcon />
+              <CssIcon />
+              <SassIcon />
+              <JavascriptIcon />
+              <img src={react} alt='react logo' />
+              <img src={MapboxIcon} alt='mapbox logo' />
+              <GitIcon />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className='work'>
           <h3>
             <a
               href='http://lisaforsenatedistrict12.com/'
@@ -44,7 +83,7 @@ const Work = (props) => {
           </div>
         </div>
         <hr />
-        <div className='work-02'>
+        <div className='work'>
           <h3>
             <a
               href='https://elizabethwellsphotography.com'
@@ -70,9 +109,9 @@ const Work = (props) => {
           </div>
         </div>
         <hr />
-        <div className='work-03'>
+        <div className='work'>
           <h3>
-            <a href='#'>scott-wells.com</a>
+            <a href='https://scott-wells.com'>scott-wells.com</a>
           </h3>
           <p>
             Of course I have to include this portfolio site. I designed this
@@ -116,7 +155,7 @@ const Work = (props) => {
           </div>
         </div>
         <hr />
-        <div className='work-04'>
+        <div className='work'>
           <h3>
             <a href='https://sandyrauschnmsenate.com/' target='blank'>
               sandyrauschnmsenate.com
